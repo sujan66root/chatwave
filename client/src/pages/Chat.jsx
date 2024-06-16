@@ -12,7 +12,7 @@ import {
   AttachFile as AttachFileIcon,
   Send as SendIcon,
 } from "@mui/icons-material";
-import { InputBox } from "../components/styles/StyledComponents";
+import { InputBox } from "../components/styles/StyledComponent";
 import FileMenu from "../components/dialogs/FileMenu";
 import MessageComponent from "../components/shared/MessageComponent";
 import { getSocket } from "../socket";
@@ -229,7 +229,7 @@ const Chat = ({ chatId, user }) => {
           </IconButton>
 
           <InputBox
-            placeholder="Type Message Here..."
+            placeholder="Send a message..."
             value={message}
             onChange={messageOnChange}
           />

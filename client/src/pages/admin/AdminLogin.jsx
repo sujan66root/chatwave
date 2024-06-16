@@ -33,7 +33,7 @@ const AdminLogin = () => {
   return (
     <div
       style={{
-        backgroundImage: bgGradient,
+        backgroundImage: "linear-gradient(to bottom, #4e54c8, #8f94fb)",
       }}
     >
       <Container

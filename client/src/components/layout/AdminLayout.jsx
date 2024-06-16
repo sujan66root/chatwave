@@ -66,7 +66,7 @@ const Sidebar = ({ w = "100%" }) => {
   return (
     <Stack width={w} direction={"column"} p={"3rem"} spacing={"3rem"}>
       <Typography variant="h5" textTransform={"uppercase"}>
-        Chattu
+        Chatwave
       </Typography>
 
       <Stack spacing={"1rem"}>

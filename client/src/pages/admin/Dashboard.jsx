@@ -21,7 +21,7 @@ import { DoughnutChart, LineChart } from "../../components/specific/Charts";
 import {
   CurveButton,
   SearchField,
-} from "../../components/styles/StyledComponents";
+} from "../../components/styles/StyledComponent";
 import { matBlack } from "../../constants/color";
 import { server } from "../../constants/config";
 import { useErrors } from "../../hooks/hook";

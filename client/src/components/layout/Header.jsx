@@ -78,7 +78,7 @@ const Header = () => {
                 <AppBar
                     position="static"
                     sx={{
-                        bgcolor: orange,
+                        bgcolor: "linear-gradient(to bottom, #4e54c8, #8f94fb)",
                     }}
                 >
                     <Toolbar>
@@ -88,7 +88,7 @@ const Header = () => {
                                 display: { xs: "none", sm: "block" },
                             }}
                         >
-                            Chattu
+                            Chatwave
                         </Typography>
 
                         <Box
