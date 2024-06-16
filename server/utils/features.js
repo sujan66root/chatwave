@@ -13,7 +13,7 @@ const cookieOptions = {
 
 const connectDB = (uri) => {
   mongoose
-    .connect(uri, { dbName: "Chattu" })
+    .connect(uri, { dbName: "Chatwave" })
     .then((data) => console.log(`Connected to DB: ${data.connection.host}`))
     .catch((err) => {
       throw err;
@@ -23,7 +23,7 @@ const connectDB = (uri) => {
 const sendToken = (res, user, code, message) => {
   const token = jwt.sign({ _id: user._id }, process.env.JWT_SECRET);
 
-  return res.status(code).cookie("chattu-token", token, cookieOptions).json({
+  return res.status(code).cookie("chatwave-token", token, cookieOptions).json({
     success: true,
     user,
     message,
@@ -37,6 +37,7 @@ const emitEvent = (req, event, users, data) => {
 };
 
 const uploadFilesToCloudinary = async (files = []) => {
+  console.log(files)
   const uploadPromises = files.map((file) => {
     return new Promise((resolve, reject) => {
       cloudinary.uploader.upload(
@@ -46,6 +47,7 @@ const uploadFilesToCloudinary = async (files = []) => {
           public_id: uuid(),
         },
         (error, result) => {
+          console.log(error)
           if (error) return reject(error);
           resolve(result);
         }
