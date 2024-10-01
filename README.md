@@ -2,6 +2,8 @@
 
 Chatwave is a real-time chat application designed for instant communication between users.
 
+![Screenshot](./client/src/assets/chatwave.png)
+
 ## Features
 
 - Real-time messaging
@@ -25,7 +27,6 @@ Chatwave is a real-time chat application designed for instant communication betw
 4. Start the server and client
 
 ## Demo
-
 
 ## License
 
